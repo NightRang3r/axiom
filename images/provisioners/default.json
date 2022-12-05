@@ -79,6 +79,9 @@
         "echo 'Downloading cent'",
         "git clone https://github.com/xm1k3/cent.git /home/op/lists/cent",
 
+        "echo 'Downloading subdomain-scripts'",
+        "git clone https://github.com/NightRang3r/scripts.git /home/op/recon/subdomain-scripts",
+
         "echo 'Downloading leaky-paths'",
         "git clone https://github.com/ayoubfathi/leaky-paths.git /home/op/lists/leaky-paths",
 
@@ -168,6 +171,9 @@
         "echo 'Installing exclude-cdn'",
         "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/Cgboal/exclude-cdn@latest'",
 
+        "echo 'Installing crobat'",
+        "/bin/su -l op -c 'GO111MODULE=on /usr/local/go/bin/go install github.com/cgboal/sonarsearch/cmd/crobat@latest'",
+
         "echo 'Installing feroxbuster'",
         "/bin/su -l root -c 'curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/master/install-nix.sh | bash && mv feroxbuster /usr/bin/'",
 
@@ -197,6 +203,10 @@
         
         "echo 'Installing github-subdomains'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/gwen001/github-subdomains@latest'",
+
+        "echo 'Installing gitlab-subdomains'",
+        "/bin/su -l op -c '/usr/local/go/bin/go install github.com/gwen001/gitlab-subdomains@latest'",
+
 
         "echo 'Installing github-endpoints'",
         "/bin/su -l op -c '/usr/local/go/bin/go install github.com/gwen001/github-endpoints@latest'",
